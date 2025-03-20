@@ -4,7 +4,45 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  /* Menu  */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* Ensures navbar stays on top */
+  }
+
+  body {
+    padding-top: 70px;  /* Adjust according to the height of your navbar */
+  }
+
+  /* Initial navbar style */
+.custom-navbar {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* When navbar is scrolled */
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  opacity: 0.8;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* Navbar toggler icon color */
+}
+.navbar-nav .nav-item .nav-link {
+  color: white !important; /* Make sure nav links are white */
+}
+
+
+
+
+
   .hero-text {
     font-size: 1.5rem;
   }
