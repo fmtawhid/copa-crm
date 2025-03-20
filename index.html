@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hero Section with Fixed Background</title>
+    <title>Copa CRM</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,13 +13,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Slick JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#">COPA CRM</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,12 +66,10 @@
     <section class="hero-section">
       <!-- <div class="hero-overlay"></div> -->
       <div class="hero-content">
-        <h1>Copa CRM</h1>
+        <h1>Copa CRM </h1>
         <hr class="hero-line" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
-          ipsum vel ligula condimentum consectetur.
-        </p>
+        <p class="w-75 m-auto">
+          Copa CRM is a powerful all-in-one platform for project management, invoicing, and customer relations—designed to boost productivity and streamline your business operations.</p>
       </div>
 
       <div class="container" style="padding: 15px; text-align: center">
@@ -71,34 +78,34 @@
           <div
             class="col-3 d-flex flex-column align-items-center justify-content-center"
           >
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="0" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Project Manager</h4>
+                <p> Manage projects with clients & team members.</p>
               </div>
             </div>
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="1" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Invoice Billing</h4>
+                <p>Automate payments & invoice management</p>
               </div>
             </div>
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="2" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Time Tracking</h4>
+                <p>Track time spent on tasks & projects easily.</p>
               </div>
             </div>
           </div>
@@ -106,7 +113,69 @@
           <!-- Second Column (Text) -->
           <div class="col-6 d-flex align-items-center justify-content-center">
             <div>
-              <h3>Hello World</h3>
+
+              <div class="laph-frame">
+                <div class="slider">
+                  
+                    <img src="image/lap1.webp" class="d-block w-100" alt="...">
+                    <img src="image/lap2.webp" class="d-block w-100" alt="...">
+                    <img src="image/lap3.webp" class="d-block w-100" alt="...">
+                    <img src="image/lap4.webp" class="d-block w-100" alt="...">
+                    <img src="image/lap5.webp" class="d-block w-100" alt="...">
+                    <img src="image/lap3.webp" class="d-block w-100" alt="...">
+                </div>
+                
+            </div>
+            <div style="width: 110%;
+              height: 1em;
+              margin-left: -20px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+        
+            <!-- <script>
+                $(document).ready(function(){
+                  $('.slider').slick({
+                    slidesToShow: 1,        // ৩টি ইমেজ দেখাবে একসাথে
+                    slidesToScroll: 1,      // ১টি করে স্লাইড হবে
+                    infinite: true,         // ইনফিনিট স্লাইডিং
+                    speed: 500,             // স্লাইডিং স্পিড
+                    draggable: true,        // ড্র্যাগ সক্ষম
+                    autoplay: true,         // স্বয়ংক্রিয় স্লাইডিং
+                    autoplaySpeed: 200000,    // ২০০০ মিলিসেকেন্ড পর পর স্লাইড হবে
+                    prevArrow: '<button type="button" class="slick-prev">Prev</button>',  // প্রিভিয়াস বাটন কাস্টমাইজ
+                    nextArrow: '<button type="button" class="slick-next">Next</button>'   // নেক্সট বাটন কাস্টমাইজ
+                  });
+                });
+            </script> -->
+            <script>
+              $(document).ready(function(){
+                  var slider = $('.slider');
+
+                  // Initialize Slick Slider
+                  slider.slick({
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      infinite: true,
+                      speed: 500,
+                      draggable: true,
+                      autoplay: true,
+                      autoplaySpeed: 2000,
+                      prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+                      nextArrow: '<button type="button" class="slick-next">Next</button>'
+                  });
+
+                  // Custom Button Navigation
+                  $('.slider-btn').click(function(){
+                      var slideIndex = $(this).data('slide');
+                      slider.slick('slickGoTo', slideIndex);
+                  });
+              });
+            </script>
+
+
             </div>
           </div>
 
@@ -114,34 +183,34 @@
           <div
             class="col-3 d-flex flex-column align-items-center justify-content-center"
           >
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="3" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Lead Management</h4>
+                <p>Capture, track, and convert leads efficiently.</p>
               </div>
             </div>
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="4" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Support Ticket</h4>
+                <p>Resolve customer issues with a ticket system.</p>
               </div>
             </div>
-            <div class="d-flex mt-5" style="gap: 10px">
+            <div class="d-flex mt-5 slider-btn" data-slide="5" style="gap: 10px">
               <div class="custom-hero-icon">
                 <i class="fas fa-laptop"></i>
                 <!-- Font Awesome Icon -->
               </div>
               <div class="text-start">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <h4>Knowledge Base</h4>
+                <p>Provide self-service support with articles.</p>
               </div>
             </div>
           </div>
@@ -151,79 +220,210 @@
 
     <div class="Section2">
       <div class="container">
+        <div class="container my-5">
+          <h3 class="text-center mb-4">Features to help you to increase your productivity</h3>
+          <hr style=" color: #009fe3; height: 3px; width: 500px; margin: auto; background: #009fe3; opacity: 1; margin-bottom: 60px;"/>
+          <div class="row g-4">
+  
+              <!-- Feature Items -->
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-clock"></i>
+                      </div>
+                      <h4 class="mt-3">Time Tracking</h4>
+                      <p>Keep track of the amount of time that you spend on your project tasks.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-project-diagram"></i>
+                      </div>
+                      <h4 class="mt-3">Project Management</h4>
+                      <p>Deliver your projects on time. Collaborate with your team clients.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-tasks"></i>
+                      </div>
+                      <h4 class="mt-3">Assign Tasks</h4>
+                      <p>Assign tasks to team members, prioritize tasks, and set deadlines.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-file-invoice"></i>
+                      </div>
+                      <h4 class="mt-3">Invoices</h4>
+                      <p>Get paid for time worked, expenses incurred, and custom products.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-credit-card"></i>
+                      </div>
+                      <h4 class="mt-3">Payments</h4>
+                      <p>Frictionless payment processing including Stripe & PayPal.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-file-alt"></i>
+                      </div>
+                      <h4 class="mt-3">Estimates</h4>
+                      <p>Provide cost estimates upfront to increase client commitment.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-handshake"></i>
+                      </div>
+                      <h4 class="mt-3">Leads & Opportunities</h4>
+                      <p>Keep track of your opportunities and nurture leads into customers.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-users"></i>
+                      </div>
+                      <h4 class="mt-3">Team Work</h4>
+                      <p>Work alone or as a team with comprehensive user roles.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-user"></i>
+                      </div>
+                      <h4 class="mt-3">Client Dashboard</h4>
+                      <p>Give customers access to a user-friendly dashboard.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-headset"></i>
+                      </div>
+                      <h4 class="mt-3">Help Desk</h4>
+                      <p>Improve customer satisfaction with a support system.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-book"></i>
+                      </div>
+                      <h4 class="mt-3">Knowledgebase</h4>
+                      <p>Offer customers access to a self-service help repository.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-comments"></i>
+                      </div>
+                      <h4 class="mt-3">Communicate</h4>
+                      <p>Connect with customers via an easy-to-use commenting system.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-file-signature"></i>
+                      </div>
+                      <h4 class="mt-3">Proposals</h4>
+                      <p>Impress clients with beautifully crafted project proposals.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-cogs"></i>
+                      </div>
+                      <h4 class="mt-3">Workflow Automation</h4>
+                      <p>Automations improve productivity and prevent workflow issues.</p>
+                  </div>
+              </div>
+  
+              <div class="col-md-3 col-sm-6 text-center">
+                  <div class="d-flex flex-column align-items-center">
+                      <div class="custom-hero-icon1">
+                          <i class="fas fa-project-diagram"></i>
+                      </div>
+                      <h4 class="mt-3">Dependency Management</h4>
+                      <p>Ensure tasks are completed in a prescribed sequence.</p>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="Section3">
+      <div class="container">
         <div class="row">
           <!-- First Item -->
           <div
-            class="col-3 d-flex flex-column align-items-center justify-content-center"
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
           >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-              style="gap: 10px"
-            >
-              <div class="custom-hero-icon1">
-                <i class="fas fa-laptop"></i>
-                <!-- Font Awesome Icon -->
-              </div>
-              <div class="text-center">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
-              </div>
+            <div class="text-left">
+              <h3>Beautifully Crafted & Feature Rich.</h3>
+              <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 250px;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+              <p style="margin-bottom: 30px;">
+                Your team and your clients will love it.<br />
+                Right from the start, our goal was to create an application that would be both full of features and a joy to use.
+                Every feature has been carefully designed to be easy to use.
+
+              </p>
+              <a href="#" class="btn-copa mt-3">Grow CRM </a>
             </div>
           </div>
 
           <!-- Second Item -->
           <div
-            class="col-3 d-flex flex-column align-items-center justify-content-center"
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
           >
             <div
               class="d-flex flex-column align-items-center justify-content-center"
               style="gap: 10px"
             >
-              <div class="custom-hero-icon1">
-                <i class="fas fa-laptop"></i>
-                <!-- Font Awesome Icon -->
-              </div>
               <div class="text-center">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Item -->
-          <div
-            class="col-3 d-flex flex-column align-items-center justify-content-center"
-          >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-              style="gap: 10px"
-            >
-              <div class="custom-hero-icon1">
-                <i class="fas fa-laptop"></i>
-                <!-- Font Awesome Icon -->
-              </div>
-              <div class="text-center">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fourth Item -->
-          <div
-            class="col-3 d-flex flex-column align-items-center justify-content-center"
-          >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center"
-              style="gap: 10px"
-            >
-              <div class="custom-hero-icon1">
-                <i class="fas fa-laptop"></i>
-                <!-- Font Awesome Icon -->
-              </div>
-              <div class="text-center">
-                <h4>Hello World</h4>
-                <p>Access independent of position and tool</p>
+                <div class="image-container">
+                  <img src="image/1.webp" class="rotate-image" alt="Image 1" />
+                  <img src="image/2.webp" class="rotate-image" alt="Image 2" />
+                  <img src="image/3.webp" class="rotate-image" alt="Image 3" />
+                </div>
               </div>
             </div>
           </div>
@@ -231,129 +431,383 @@
       </div>
     </div>
 
-    <div class="Section3 ">
-        <div class="container">
-          <div class="row">
-            <!-- First Item -->
-            <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-              
-                <div class="text-center">
-                  <h4>TRACEABLE DIGITAL SOLUTIONS</h4>
-                  <p>SOFT CRM is a web-based application which allows managing business processes such as sales, marketing, campaigns, and offers; it also includes management of all communication with current and potential customers. It can be used independently or in integration with SOFT ERP.<br>
-
-                    With its user-friendly interface, SOFT CRM enables you to increase your company’s customer portfolio and service quality by generating a strong corporate memory.</p>
-                    <a href="#" class="btn-copa">Learn More</a>
-                </div>
-              
-            </div>
-  
-  
-            <!-- Second Item -->
-            <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                <div
-                  class="d-flex flex-column align-items-center justify-content-center" style="gap: 10px">
-                  <div class="text-center">
-                    <div class="image-container">
-                        <img src="image/1.webp" class="rotate-image" alt="Image 1">
-                        <img src="image/2.webp" class="rotate-image" alt="Image 2">
-                        <img src="image/3.webp" class="rotate-image" alt="Image 3">
-                    </div>
-                    
-                  </div>
-                </div>
-            </div>
-  
-          </div>
-        </div>
-    </div>
-
     <div class="Section4">
-        <div class="container">
-          <div class="row">
-            <!-- First Item -->
+      <div class="container">
+        <h4 class="text-center">Why Copa CRM ?</h4>
+        <hr style=" color: #009fe3; height: 3px; width: 500px; margin: auto; background: #009fe3; opacity: 1; margin-bottom: 60px;"/>
+        <div class="row">
+          
+          <!-- First Item -->
 
-             <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                <img src="image/sec1.webp" width="500px" alt="" srcset="">
-            </div>
-            <!-- Second Item -->
-            <div class="col-6">
-                <h4>Why Copa CRM ? </h4>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          <div
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <img src="image/sec1.webp" width="500px" alt="" srcset="" />
+          </div>
+          <!-- Second Item -->
+          <div class="col-6">
+            
+            <div class="accordion" id="faqAccordion">
+              <!-- Question 1 -->
+              <div class="accordion-item mb-1">
+                  <h2 class="accordion-header text-center" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          How do I get started?
+                      </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                          Ready to streamline your business management? Get started in minutes with these simple steps:
+                          <ul>
+                              <li><strong>Purchase Grow CRM:</strong> Complete your checkout here.</li>
+                              <li><strong>Submit your free installation request:</strong> Fill out our simple form with your server details.</li>
+                              <li><strong>Relax and focus on your business:</strong> We’ll handle the technical setup within 24 hours!</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Question 2 -->
+              <div class="accordion-item mb-1">
+                  <h2 class="accordion-header text-center" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Is there a monthly fee for using Grow CRM?
+                      </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                          Grow CRM uses a one-time payment model, so you never have to worry about recurring fees. Pay once and get lifetime access.
+                      </div>
+                  </div>
+              </div>
+          
+          
+              <!-- Question 6 -->
+              <div class="accordion-item mb-1">
+                  <h2 class="accordion-header text-center" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          Will I receive updates for the application?
+                      </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                          Yes! You get lifetime updates, including bug fixes, security patches, and new features.
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Question 7 -->
+              <div class="accordion-item mb-1">
+                  <h2 class="accordion-header text-center" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          Which payment processors (Gateways) can I use?
+                      </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                          Supported payment gateways include: <strong>Stripe, PayPal, Paystack, Razorpay, Tap, Mollie, Offline (Bank)</strong>.
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- Question 8 -->
+              <div class="accordion-item mb-1">
+                  <h2 class="accordion-header text-center" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          Which programming language is used?
+                      </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                          Grow CRM is built using <strong>PHP, Laravel, JavaScript, MySQL, HTML & CSS</strong>.
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          </div>
           </div>
         </div>
+      </div>
     </div>
 
-    <div class="Section5">
-        <h3>SCREEN DISPLAYS</h3>
-        
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                hello
-              </div>
-              <div class="carousel-item">
-                hello
-              </div>
-              <div class="carousel-item">
-                hello
+
+
+    <div class="section6">
+      <div class="container">
+        <h2 class="text-center text-white">SCREEN DISPLAYS</h2>
+        <hr
+          style="
+            color: #009fe3;
+            height: 3px;
+            width: 500px;
+            margin: auto;
+            background: #009fe3;
+            opacity: 1;
+            margin-bottom: 60px;
+          "
+        />
+        <div class="carousel">
+          
+          
+          <div class="lap-frame">
+            <div>
+              <img src="image/lap2.webp" class="d-block w-100" style="border:10px solid black" alt="...">
+              <div style="width: 110%;
+              height: 1em;
+              margin-left: -8px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div>
+              <img src="image/lap3.webp" class="d-block w-100" style="border:10px solid black" alt="...">
+              <div style="width: 110%;
+              height: 1em;
+              margin-left: -8px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div>
+              <img src="image/lap4.webp" class="d-block w-100" style="border:10px solid black" alt="...">
+              <div style="width: 110%;
+              height: 1em;
+              margin-left: -8px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div>
+              <img src="image/lap5.webp" class="d-block w-100" style="border:10px solid black" alt="...">
+              <div style="width: 110%;
+              height: 1em;
+              margin-left: -8px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div>
+              <img src="image/lap1.webp" class="d-block w-100" style="border:10px solid black" alt="...">
+              <div style="width: 110%;
+              height: 1em;
+              margin-left: -8px;
+              bottom: 0;
+              background: #BDBDBD;
+              border-radius: 1em / 1.2em;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <style>
+    .carousel {
+      width: 100%;
+    }
+    .lap-frame{
+      width: 370px !important;
+      margin-left: 27px !important;
+      padding: 0px 10px !important;
+    }
+    
+    .slick-prev, .slick-next {
+      /* background-color: black; */
+      color: white;
+      /* font-size: 20px; */
+      border-radius: 50%;
+      padding: 10px;
+      z-index: 10;
+    }
+    
+    .slick-prev {
+      left: -50px;
+    }
+    
+    .slick-next {
+      right: -50px;
+    }
+    
+    .slick-prev:hover, .slick-next:hover {
+      background-color: #333;
+    }
+    
+    .slick-slide {
+      padding: 0 0px; /* স্লাইডের মধ্যে ফাঁকা জায়গা */
+    }
+    
+    .slick-track {
+      display: flex;
+    }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('.carousel').slick({
+          slidesToShow: 3,        // ৩টি ইমেজ দেখাবে একসাথে
+          slidesToScroll: 1,      // ১টি করে স্লাইড হবে
+          infinite: true,         // ইনফিনিট স্লাইডিং
+          speed: 500,             // স্লাইডিং স্পিড
+          draggable: true,        // ড্র্যাগ সক্ষম
+          autoplay: true,         // স্বয়ংক্রিয় স্লাইডিং
+          autoplaySpeed: 2000000,    // ২০০০ মিলিসেকেন্ড পর পর স্লাইড হবে
+          prevArrow: '<button type="button" class="slick-prev">Prev</button>',  // প্রিভিয়াস বাটন কাস্টমাইজ
+          nextArrow: '<button type="button" class="slick-next">Next</button>'   // নেক্সট বাটন কাস্টমাইজ
+        });
+      });
+
+    </script>
+    
+
+    <div class="section7 py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="E-Document Application"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">E-Document Application</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  E-Document is a web-based application that allows companies to
+                  manage accounting and financial work processes in a digital
+                  environment. It eliminates the costs arising from transactions
+                  such as printing, sending, and keeping hardcopy invoices,
+                  promoting a paperless working environment for your company.
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="E-Document Application"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">E-Document Application</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  E-Document is a web-based application that allows companies to
+                  manage accounting and financial work processes in a digital
+                  environment. It eliminates the costs arising from transactions
+                  such as printing, sending, and keeping hardcopy invoices,
+                  promoting a paperless working environment for your company.
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="E-Document Application"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">E-Document Application</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  E-Document is a web-based application that allows companies to
+                  manage accounting and financial work processes in a digital
+                  environment. It eliminates the costs arising from transactions
+                  such as printing, sending, and keeping hardcopy invoices,
+                  promoting a paperless working environment for your company.
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <section id="sec8" class="d-flex justify-content-center">
+      <div class="sec8-content text-center">
+        <h1 class="display-4"> Contact Us </h1>
+        <p class="lead mb-5">
+          Get in touch with us today! We are here to assist with any questions or support you need.
+        </p>
+        <a href="#explore" class="btn-copa pt-3 text-white">Contact US</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+       
+        <!-- Copyright -->
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Rafusoft. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS and necessary JS for navbar toggle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  </body>
+<!-- এই লাইনগুলো রিমুভ করুন -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- শুধু এই স্ক্রিপ্টটি রাখুন -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

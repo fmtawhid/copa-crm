@@ -58,7 +58,7 @@
   
   /* Custom Hero Icon */
   .custom-hero-icon {
-    width: 130px;
+    width: 150px;
     height: 95px;
     border-radius: 50%;
     display: flex;
@@ -68,6 +68,7 @@
     margin-bottom: 10px;
     border: 2px solid white;
     background-color: transparent;
+    font-size: 25px;
   }
   .custom-hero-icon:hover {
     cursor: pointer !important; 
@@ -85,6 +86,7 @@
     margin-bottom: 10px;
     border: 2px solid #009ec5;
     background-color: transparent;
+    font-size: 30px;
   }
   .custom-hero-icon1:hover {
     cursor: pointer !important; 
@@ -203,11 +205,12 @@
 }
 .Section3{
     padding: 20px 130px;
+    height: 500px;
 }
-.Section3 h4{
+/* .Section3 h4{
     font-size: 40px;
     font-weight: 400;
-}
+} */
 /* General image styles */
 .image-container {
     position: relative;
@@ -280,6 +283,306 @@
 }
 
 .Section4{
-    padding: 100px 10px;
+    padding: 40px 10px;
     background-color: #ddd;
 }
+
+#faq{
+  color: #696969;
+  font-size: 20px ;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.ccmain {
+  height: 10px;
+  width: 100%;
+  position: relative;
+  background-color: #FFF;
+  border-top: 1px solid #E5E5E5;
+}
+
+.sizeimg{
+  width: 100%;
+  height: 150px;
+}
+
+.sape {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 1px solid #E5E5E5;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 50%;
+  border-top: none;
+  border-left: none;
+}
+
+.accordion-header {
+  /* display: flex; */
+  justify-content: center; 
+  align-items: center; 
+  /* height: 60px;
+  position: relative; */
+}
+
+.accordion-button {
+  font-weight: bold;
+  color: #333;
+  padding: 15px;
+  transition: all 0.3s ease;
+  border: none !important; 
+  border-radius: 0 !important; 
+  background-color: transparent !important;
+  display: inline-flex;
+  text-align: center;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  margin-top: -20px;
+}
+
+
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.accordion-button:hover {
+  color: #2B2B2B; 
+  background-color: transparent !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-collapse {
+  border-top: none !important;
+}
+
+.colapse-btn {
+  border: none !important;
+  display: flex;
+  align-items: center; 
+  justify-content: center !important; 
+  padding: 10px 20px;
+  
+}
+
+.colapse-btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-body{
+  background-color: #F2F2F2;
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+      font-size: 0.9em;
+      padding: 8px;
+  }
+
+  .accordion-body {
+      font-size: 0.85em;
+  }
+}
+
+.laph-frame {
+  width: 500px;
+  height: 308px;
+  margin: auto;
+  position: relative;
+  overflow: hidden; /* Hide the images that are outside the frame */
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition when sliding */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.laph-frame:hover .slider {
+  cursor: grab; /* Change cursor to show drag */
+}
+
+/* Bottom indicator style */
+
+
+
+
+
+
+.section6 {
+  background-image: url('image/hero.jpg');  
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  padding: 75px 0 100px 0; 
+}
+
+/* আপনার কাস্টম carousel স্টাইলস */
+.carousel {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+
+/* slider */
+/* Black color for the carousel control buttons (Next and Previous) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black !important;
+}
+
+/* Black color for the carousel control buttons when they are in the default state */
+.carousel-control-prev,
+.carousel-control-next {
+  color: black;
+}
+
+/* Black color for the carousel indicators (the buttons below the carousel) */
+.carousel-indicators button {
+  background-color: black !important;
+}
+.laptop-frame {
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0 auto;
+}
+
+.laptop-frame::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.laptop-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.laptop-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec7btn {
+  padding: 5px 15px;
+  color: #000000;
+  border: 1px solid black;
+  text-decoration: none; /* To remove underline */
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+}
+
+.sec7btn:hover {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+
+#sec8 {
+  background: url('image/hero.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed; /* Parallax Effect */
+  height: 450px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Overlay for better readability */
+#sec8::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Content inside the section */
+.sec8-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* Footer Styling */
+.footer {
+  background: #2B2B2B;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #009fe3;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #00c0ff;
+  text-decoration: underline;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+
+
+
+
+
